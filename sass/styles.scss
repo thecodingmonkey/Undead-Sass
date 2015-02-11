@@ -47,7 +47,6 @@ h1 {
   font-size: 12px;
   letter-spacing: 3px;
 
-
   text-align: center;
 }
 
@@ -55,9 +54,6 @@ h2 {
   padding-top: 40px;
   padding-bottom: 5px;
   font-size: 32px;
-  // text-decoration-style: dotted;
-  // text-decoration-line: underline;
-  // text-decoration-color: $medium-color;
 }
 
 h2 a, h3 a{
@@ -90,8 +86,8 @@ a {
 }
 
 .nav li {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 h4 {
@@ -137,34 +133,40 @@ h4 {
 
 /* medium version */
 @media #{$medium-only} {
-  h1 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-top: 2px solid $medium-color;
-    border-bottom: 2px solid $medium-color;
+  .row:nth-child(2) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
+  h1 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-top: 1px solid $medium-light-color;
+    border-bottom: 1px solid $medium-light-color;
+
+    font-size: 18px;
     background-color: $light-color;
     letter-spacing: 5px;
-    color: $medium-color;
+    color: $medium-light-color;
   }
 
   aside {
     width: 100%;
     p {
-      padding-bottom: 50px;
+      padding-bottom: 45px;
     }
-    padding-bottom: 35px;
+    padding-bottom: 40px;
   }
 
   article {
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
   }
 
   .read_more {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 19px;
+    padding-bottom: 19px;
     background-color: $medium-color;
     text-align: center;
     color: $medium-light-color;
@@ -172,6 +174,7 @@ h4 {
 
   h4 {
     padding-bottom: 15px;
+    font-size: 20px;
   }
 
   .left p {
@@ -179,9 +182,9 @@ h4 {
   }
 
   footer .right {
-    padding-top: 15px;
+    padding-top: 24px;
     border-top: solid 1px $medium-color;
-    padding-bottom: 15px;
+    padding-bottom: 24px;
   }
 
 }
