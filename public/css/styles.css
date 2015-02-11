@@ -1,2 +1,74 @@
+@import url('/css/reset.css');
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic);
+/* common to all three sizes */
+.row {
+  padding-left: 40px;
+  padding-right: 40px; }
+
+html {
+  font-size: 16px;
+  font-family: "Droid Serif", sans-serif; }
+
 body {
-  background: #333333; }
+  background: #EFF9EC; }
+
+.column {
+  max-width: 900px; }
+
+article {
+  width: 70%; }
+
+aside {
+  width: 30%; }
+
+h1 {
+  color: #57C1C7;
+  background-color: #389FA8;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center; }
+
+h2 {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  font-size: 32px; }
+
+h3 {
+  color: #389FA8;
+  padding-bottom: 50px; }
+
+article p {
+  line-height: 30px; }
+
+ul {
+  text-align: center; }
+
+ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+a {
+  color: #14273D;
+  text-decoration: none; }
+
+/* small version */
+@media only screen and (max-width:640px) {
+  article {
+    width: 100%;
+    padding-bottom: 30px; }
+  aside {
+    display: none;
+    width: 0%; }
+  .nav li {
+    display: none; }
+  footer .left {
+    display: none; }
+  footer {
+    border-top: solid 1px #389FA8;
+    padding-top: 20px;
+    padding-bottom: 20px; } }
+
+/* medium version */
+/* large version */

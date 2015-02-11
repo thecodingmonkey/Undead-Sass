@@ -1,5 +1,119 @@
-$dark-color : #333333;
+$darkest-color: #14273D;
+$medium-color: #389FA8;
+$medium-light-color: #57C1C7;
+$light-color: #EFF9EC; 
+
+@import url('/css/reset.css');
+
+// for google fonts
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic);
+
+$small-only: "only screen and (max-width:640px)";
+$medium-only: "only screen and (min-width:640px) and (max-width: 960px)";
+$large-only: "only screen and (min-width:961px)";
+
+/* common to all three sizes */
+
+.row {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Droid Serif", sans-serif;
+}
 
 body {
-  background: $dark-color;
+  background: $light-color;
 }
+
+.column {
+  max-width: 900px;
+}
+
+article {
+  width: 70%;
+}
+
+aside {
+  width: 30%;
+}
+
+h1 {
+  color: $medium-light-color;
+  background-color: $medium-color;
+
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  text-align: center;
+}
+
+h2 {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  font-size: 32px;
+}
+
+h3 {
+  color: $medium-color;
+  padding-bottom: 50px;
+}
+
+article p {
+  line-height: 30px;
+}
+
+ul {
+  text-align: center;
+}
+
+ul li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  color: $darkest-color;
+  text-decoration: none;
+}
+
+
+/* small version */
+@media #{$small-only} {
+
+  article {
+    width: 100%;
+    padding-bottom: 30px;
+  }  
+
+  aside {
+    display: none;
+    width: 0%
+  }
+
+  .nav li {
+    display: none;
+  }
+
+  footer .left {
+    display: none;
+  }
+
+  footer {
+    border-top: solid 1px $medium-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+}
+
+
+/* medium version */
+
+
+/* large version */
