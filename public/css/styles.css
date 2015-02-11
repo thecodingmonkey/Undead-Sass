@@ -12,9 +12,6 @@ html {
 body {
   background: #EFF9EC; }
 
-.column {
-  max-width: 900px; }
-
 article {
   width: 70%; }
 
@@ -113,3 +110,52 @@ h4 {
     padding-bottom: 15px; } }
 
 /* large version */
+@media only screen and (min-width:961px) {
+  .row {
+    max-width: 900px; }
+  body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #389FA8; }
+  ul.nav, article, aside, footer {
+    background-color: #EFF9EC; }
+  h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid #389FA8;
+    border-bottom: 2px solid #389FA8;
+    background-color: #EFF9EC;
+    letter-spacing: 5px;
+    color: #389FA8; }
+  article {
+    width: 69.75%;
+    float: left;
+    border-right: 1px solid #389FA8;
+    padding: 25px;
+    box-sizing: border-box; }
+  aside {
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    float: right;
+    height: 100%; }
+    aside h4 {
+      padding-bottom: 10px; }
+    aside p {
+      line-height: 30px;
+      padding-bottom: 50px; }
+    aside .read_more {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #389FA8;
+      text-align: center;
+      color: #57C1C7; }
+  div.footer {
+    border-top: 1px solid #389FA8;
+    padding-top: 25px; }
+  footer .left {
+    float: right; }
+  footer .right {
+    float: left; } }
