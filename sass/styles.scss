@@ -42,25 +42,36 @@ h1 {
   background-color: $medium-color;
 
   text-transform: uppercase;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 12px;
+  letter-spacing: 3px;
+
 
   text-align: center;
 }
 
 h2 {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 5px;
   font-size: 32px;
+  // text-decoration-style: dotted;
+  // text-decoration-line: underline;
+  // text-decoration-color: $medium-color;
+}
+
+h2 a, h3 a{
+  border-bottom: 1px dashed $medium-color;
 }
 
 h3 {
   color: $medium-color;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  padding-top: 5px;
 }
 
 article p {
-  line-height: 30px;
+  line-height: 27px;
 }
 
 ul {
@@ -92,9 +103,15 @@ h4 {
 /* small version */
 @media #{$small-only} {
 
+  div.row:nth-child(2) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%
+  }
+
   article {
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }  
 
   aside {
@@ -113,7 +130,7 @@ h4 {
   footer {
     border-top: solid 1px $medium-color;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 }
 
