@@ -181,10 +181,17 @@ h4 {
     display: none;
   }
 
+  footer.row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   footer .right {
     padding-top: 24px;
     border-top: solid 1px $medium-color;
     padding-bottom: 24px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
 }

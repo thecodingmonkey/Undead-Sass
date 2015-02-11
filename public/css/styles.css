@@ -154,10 +154,15 @@ h4 {
     font-size: 20px; }
   .left p {
     display: none; }
+  footer.row {
+    padding-left: 0;
+    padding-right: 0; }
   footer .right {
     padding-top: 24px;
     border-top: solid 1px #389FA8;
-    padding-bottom: 24px; } }
+    padding-bottom: 24px;
+    padding-left: 0;
+    padding-right: 0; } }
 
 /* large version */
 @media only screen and (min-width:961px) {
